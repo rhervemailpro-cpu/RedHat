@@ -1,0 +1,60 @@
+{
+  "app": {
+    "name": "RedHat ChatBot",
+    "version": "1.0.0",
+    "description": "Apple-styled modern chatbot for RedHat company questions",
+    "author": "RedHat Assistant Team",
+    "license": "MIT"
+  },
+  "branding": {
+    "colors": {
+      "primary": "#EE0000",
+      "secondary": "#111111",
+      "accent": "#CC0000",
+      "light": "#F5F5F7",
+      "dark": "#1D1D1F"
+    },
+    "company": "Red Hat",
+    "tagline": "Enterprise Solutions Simplified"
+  },
+  "openai": {
+    "defaultModel": "gpt-4",
+    "models": ["gpt-4", "gpt-3.5-turbo"],
+    "temperature": 0.7,
+    "maxTokens": 1000,
+    "topP": 0.95
+  },
+  "knowledge": {
+    "products": [
+      "Red Hat Enterprise Linux",
+      "Red Hat OpenStack Platform",
+      "Red Hat OpenShift",
+      "Red Hat Ansible Automation",
+      "Red Hat Satellite",
+      "Red Hat CloudForms",
+      "Red Hat JBoss",
+      "Red Hat Fuse",
+      "Red Hat Application Migration Toolkit"
+    ],
+    "services": [
+      "Technical Support",
+      "Consulting",
+      "Training",
+      "Certification",
+      "Professional Services"
+    ]
+  },
+  "ui": {
+    "theme": "light",
+    "darkModeSupport": true,
+    "animationsDuration": "0.3s",
+    "messageMaxWidth": "60%",
+    "mobileMessageMaxWidth": "80%"
+  },
+  "features": {
+    "conversationHistory": true,
+    "darkMode": true,
+    "localStoragePersistence": true,
+    "apiKeyProtection": true
+  }
+}

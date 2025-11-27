@@ -1,0 +1,14 @@
+{
+  "name": "redhat-chatbot",
+  "version": "1.0.0",
+  "description": "RedHat ChatBot - Enterprise Assistant powered by OpenAI",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "build": "echo 'Static site ready for deployment'"
+  },
+  "devDependencies": {},
+  "engines": {
+    "node": "18.x"
+  }
+}
