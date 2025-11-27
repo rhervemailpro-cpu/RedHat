@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Red Hat ChatBot - Enterprise Assistant</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Background decorative elements -->
+    <div class="background-decoration">
+        <div class="gradient-blob blob-1"></div>
+        <div class="gradient-blob blob-2"></div>
+    </div>
+
+    <div class="page-container">
+        <!-- Header with Red Hat branding -->
+        <header class="main-header">
+            <div class="header-logo">
+                <!-- Red Hat Logo (SVG) -->
+                <svg class="redhat-logo" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="100" height="100" fill="#EE0000" rx="10"/>
+                    <text x="50" y="65" font-size="50" font-weight="bold" text-anchor="middle" fill="white" font-family="sans-serif">RH</text>
+                </svg>
+                <div class="header-branding">
+                    <h1 class="brand-title">Red Hat ChatBot</h1>
+                    <p class="brand-subtitle">Enterprise Assistant Powered by OpenAI</p>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main centered chat window -->
+        <main class="main-content">
+            <div class="chat-wrapper">
+                <!-- Chat window -->
+                <div class="chat-card">
+                    <div class="chat-header">
+                        <div class="chat-title">
+                            <span class="status-dot"></span>
+                            RedHat Assistant
+                        </div>
+                        <div class="chat-status">Ready to help</div>
+                    </div>
+
+                    <div class="chat-messages" id="chatMessages">
+                        <div class="message bot-message">
+                            <div class="message-avatar bot-avatar">
+                                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="9"></circle>
+                                    <circle cx="12" cy="12" r="2"></circle>
+                                    <path d="M12 2v5m0 10v5m-7-7h-5m10 0h5M5.64 5.64l3.54 3.54m7.64 7.64l3.54 3.54M5.64 18.36l3.54-3.54m7.64-7.64l3.54-3.54"></path>
+                                </svg>
+                            </div>
+                            <div class="message-content">
+                                <p>Hello! I'm your Red Hat Assistant. Ask me anything about Red Hat products, services, and enterprise solutions.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Chat input -->
+                    <div class="chat-footer">
+                        <div class="input-wrapper">
+                            <input 
+                                type="text" 
+                                id="userInput" 
+                                class="chat-input" 
+                                placeholder="Ask about Red Hat products, services, or solutions..."
+                                autocomplete="off"
+                            />
+                            <button id="sendBtn" class="send-button" aria-label="Send message">
+                                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="23 4 23 10 17 10"></polyline>
+                                    <path d="M20.49 15a9 9 0 1 1 .12-20.49h7"></path>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="input-hint">Press Enter to send</div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Loading indicator -->
+        <div class="loading-indicator" id="loadingIndicator" style="display: none;">
+            <div class="spinner"></div>
+            <span>Thinking...</span>
+        </div>
+    </div>
+
+    <!-- Red Hat visuals footer -->
+    <footer class="page-footer">
+        <div class="footer-content">
+            <p class="footer-text">Powered by <strong>Red Hat Enterprise Linux</strong> and <strong>OpenAI</strong></p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
